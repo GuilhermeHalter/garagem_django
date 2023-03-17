@@ -6,4 +6,11 @@ class Marca(models.Model):
 
     def __str__(self):
         return self.nome
+
+
+class Categoria(models.Model):
+    descricao = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.descricao
 # Create your models here.
